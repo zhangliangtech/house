@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql2Tables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <!-- 是否去除时间标志     true：是  ||  false:否 -->
+            <property name="suppressDate" value="true"/>
+            <!-- 是否去除自动生成的注释    true：是   ||  false:否 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <!--数据库连接JDBC：驱动、地址、用户名、密码 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/lethouse"
+                        userId="root"
+                        password="root">
+        </jdbcConnection>
+
+        <!-- 数据解析：把JDBC DECIMAL 和 NUMERIC 类型解析为-->
+        <!-- true：java.math.BigDecimal  ||  false：Integer     -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- 实体类的生成位置pojo或entity-->
+        <!-- enableSubPackages:是否让schema作为包的后缀-->
+        <!-- trimStrings:是否清理获取的字段的前后空格 -->
+        <javaModelGenerator targetPackage="com.house.entity" targetProject="src/main/java">
+            <property name="enableSubPackages" value="false"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- mapper映射文件生成的位置 ,enableSubPackages:是否让schema作为包的后缀-->
+        <sqlMapGenerator targetPackage="com.house.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+
+        <!-- targetPackage：mapper接口生成的位置 ,enableSubPackages:是否让schema作为包的后缀-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.house.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+
+        <!-- 指定数据库表 -->
+        <table tableName="district"/>
+        <table tableName="house"/>
+        <table tableName="street"/>
+        <table tableName="type"/>
+        <table tableName="users"/>
+    </context>
+</generatorConfiguration>

@@ -1,0 +1,4 @@
+
+asquid:S3027A"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(Üèµþ
+csquid:S00112="FDefine and throw a dedicated exception instead of using a generic one.(âƒ©œûÿÿÿÿ
+isquid:S00117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏßÀš

@@ -1,0 +1,16 @@
+
+osquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(œﬂ…e
+psquid:S2293I"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÛŒ≥Ÿ
+psquid:S2293x"YReplace the type specification in this constructor call with the diamond operator ("<>").(∑¸ñù
+wsquid:S1488:"`Immediately return this expression instead of assigning it to the temporary variable "criteria".(∂’ØÏ
+csquid:S00112Z"FDefine and throw a dedicated exception instead of using a generic one.(‘¡ÒÕ¯ˇˇˇˇ
+csquid:S00112a"FDefine and throw a dedicated exception instead of using a generic one.(ı‹ó∫˛ˇˇˇˇ
+]squid:S00112h"FDefine and throw a dedicated exception instead of using a generic one.(Ï·§
+
+csquid:S00112o"FDefine and throw a dedicated exception instead of using a generic one.(ı‹ó∫˛ˇˇˇˇ
+^squid:S00112v"FDefine and throw a dedicated exception instead of using a generic one.(¡ùöπ
+^squid:S00112Ç"FDefine and throw a dedicated exception instead of using a generic one.(Ï·§
+
+Tsquid:S11553">Use isEmpty() to check whether the collection is empty or not.(¡Ωºs
+Zsquid:S1155M">Use isEmpty() to check whether the collection is empty or not.(Ì¥’˚¸ˇˇˇˇ
+Usquid:S1155u">Use isEmpty() to check whether the collection is empty or not.(Õ√ë∆
